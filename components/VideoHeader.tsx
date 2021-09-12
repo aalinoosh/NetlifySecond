@@ -46,7 +46,7 @@ const VideoHeader: FC<Props> = ({
           playing={true}
           loop={true}
           url="https://www.youtube.com/watch?v=uMa7_umV5fI"
-          // playIcon={<button className={`playscale`}> {isMobile ? playerMobile : player} </button>}
+          playIcon={<button className={`playscale`}> {isMobile ? playerMobile : player} </button>}
           // light={imgurl}
         />
       </div>
