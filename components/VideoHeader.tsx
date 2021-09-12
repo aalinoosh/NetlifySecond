@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react"
+import { FC,ReactElement, useState, useEffect } from "react"
 import ReactPlayer from "react-player"
 import { APIAsset } from "../types/common"
 import makeAssetURL from "../lib/makeAssetURL"
@@ -8,32 +8,13 @@ import { player, playerMobile } from "./Svg"
 import HTMLText from "./HTMLText"
 import Grid from "./Grid"
 import { PageContext } from "../context/PageContext"
-import { useContext } from "react"
 
-type Props = {
-  videoURL: string
-  text: string
-  imagePoster: APIAsset
-}
 
-const VideoHeader: FC<Props> = ({
-  videoURL,
-  text,
-  imagePoster,
+
+const VideoHeader: FC= ({
+  
 }): ReactElement => {
-  const { isMobile } = useContext(PageContext)
-  const [imgurl, setImgurl] = useState()
-
-  useEffect(() => {
-    if (typeof imagePoster != "undefined") {
-      const assetURL = makeAssetURL({
-        asset: imagePoster,
-        size: 1400,
-      })
-      setImgurl(assetURL)
-    }
-  }, [imagePoster])
-
+  
   return (
     <Container className="md:pb-40 z-10">
       <div className="relative  pt-56 w-full h-0 bg-withe ">
@@ -46,8 +27,6 @@ const VideoHeader: FC<Props> = ({
           playing={true}
           loop={true}
           url="https://www.youtube.com/watch?v=uMa7_umV5fI"
-          playIcon={<button className={`playscale`}> {isMobile ? playerMobile : player} </button>}
-          // light={imgurl}
         />
       </div>
 

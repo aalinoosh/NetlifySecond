@@ -29,7 +29,7 @@ const Page: React.FC<Props> = ({
       </Head>
       <p>Hello world!</p>
       {/* <ComponentIterator modules={components} /> */}
-      <VideoHeader modules={components} />
+      {/* <VideoHeader /> */}
     </>
   )
 }
