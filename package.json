@@ -1,0 +1,47 @@
+{
+  "name": "ricoh",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "git push && git checkout prod && git merge master && git push && git checkout master",
+    "export": "next export",
+    "clean": "rm -rf .next"
+  },
+  "dependencies": {
+    "focus-trap-react": "^8.7.1",
+    "formik": "^2.2.8",
+    "framer-motion": "^4.1.17",
+    "lodash": "^4.17.21",
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-collapsible": "^2.8.3",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "17.0.2",
+    "react-markdown": "^6.0.2",
+    "react-player": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/react": "^17.0.6",
+    "@types/webpack-env": "^1.16.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "autoprefixer": "^10.2.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^8.2.15",
+    "prettier": "^2.3.0",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.2.4"
+  }
+}

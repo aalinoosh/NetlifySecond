@@ -1,0 +1,144 @@
+@import './fonts.css';
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F1F2F3;
+  color :#17224D;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+/* we need to change it */
+
+.collapsible-content-edonec {
+  transition: height 0.4s ease-in-out;
+}
+
+.collapsible-icon-button-edonec {
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+ .fas-edonec {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+
+.rotate-center-edonec {
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.rotate-center-edonec.down {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rotate-center-edonec.down-desk {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.rotate-center-edonec.up {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.down:before {
+  content: "\5f ";
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.markdown{
+  white-space: pre-wrap;
+}
+
+.markdown li{
+  white-space: normal;
+  list-style: outside;
+  margin-left: 25px;
+}
+
+.markdown * {
+  margin-bottom: 2rem;
+}
+
+.markdown :last-of-type {
+  margin-bottom: 0;
+}
+
+.markdown ul {
+  list-style-type: none;
+
+}
+.markdown ul li {
+  list-style-type: none;
+
+}
+
+.markdown strong {
+  font-weight: bold;
+}
+
+.markdown ul li:only-child {
+  margin-bottom: 0;
+}
+
+.markdown ul li:first-of-type { 
+  margin-top: 1.5rem;
+}
+
+.markdown ul li:last-of-type { 
+  margin-bottom: 1.5rem;
+}
+
+.markdown ul li::before {
+  content: ""; 
+  color: 17224D;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #17224D;
+  border-radius: 50%;
+  margin-left: -2em;
+  margin-top: .2em;
+  float: left;
+}
+
+
+
+
