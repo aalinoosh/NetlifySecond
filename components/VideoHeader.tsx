@@ -45,9 +45,9 @@ const VideoHeader: FC<Props> = ({
           height="80%"
           playing={true}
           loop={true}
-          url={videoURL}
-          playIcon={<button className={`playscale`}> {isMobile ? playerMobile : player} </button>}
-          light={imgurl}
+          url="https://www.youtube.com/watch?v=uMa7_umV5fI"
+          // playIcon={<button className={`playscale`}> {isMobile ? playerMobile : player} </button>}
+          // light={imgurl}
         />
       </div>
 
@@ -56,7 +56,8 @@ const VideoHeader: FC<Props> = ({
           <Appear>
           <HTMLText
             className="font-primaryNormal  md:leading-3 md:text-big1"
-            text={text}
+            text="Lorem ipsum derit in voluptate velit esse cillum dolore eu 
+            fin culpa qui officia deserunt mollit anim id est laborum."
           />
           </Appear>
         </div>
